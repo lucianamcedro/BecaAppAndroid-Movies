@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MovieBeca</string>
+    <string name="movie_data">%s | %s</string>
+</resources>
