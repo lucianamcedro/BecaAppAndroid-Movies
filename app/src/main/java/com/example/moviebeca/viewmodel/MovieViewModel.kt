@@ -4,36 +4,32 @@ import androidx.lifecycle.*
 import com.example.moviebeca.model.Movie
 import com.example.moviebeca.model.MovieApiResult
 import com.example.moviebeca.repositorys.IMovieRepository
-import kotlinx.coroutines.Dispatchers
+import com.example.moviebeca.repositorys.MovieRepository
 import kotlinx.coroutines.launch
-import kotlinx.coroutines.withContext
+import retrofit2.await
 import java.lang.Exception
 
-
 class MovieViewModel(
-  private val movieRepository: IMovieRepository
-):    ViewModel() {
-    private val _movies = MutableLiveData<MovieApiResult<List<Movie>>>()
-    val movies: LiveData<MovieApiResult<List<Movie>>> = _movies
+    private val movieRepository: IMovieRepository
+) : ViewModel() {
+    private val _movie = MutableLiveData<MovieApiResult<List<Movie>>>()
+    val movies: LiveData<MovieApiResult<List<Movie>>> = _movie
 
     fun getMoviesFromRetrofit() {
         viewModelScope.launch {
-            _movies.value = MovieApiResult.Loading()
+            _movie.value = MovieApiResult.Loading()
             try {
-                val moviesFromApi = withContext(Dispatchers.IO) {
-                    movieRepository.getMovies()
-                }
-                _movies.value = MovieApiResult.Success(moviesFromApi)
+                val movieApi = movieRepository.getMovies().await()
+                _movie.value = MovieApiResult.Success(movieApi.results)
             } catch (e: Exception) {
                 val movieResult = MovieApiResult.Error<List<Movie>>(e)
-                _movies.value = movieResult
+                _movie.value = movieResult
             }
         }
     }
 }
-
-class MovieViewModelFactory(private val repository: IMovieRepository) : ViewModelProvider.Factory {
-    override fun <T : ViewModel?> create(modelClass: Class<T>): T {
+class MovieViewModelFactory(private val repository: MovieRepository) : ViewModelProvider.Factory {
+    override fun <T : ViewModel> create(modelClass: Class<T>): T {
         return MovieViewModel(repository) as T
     }
 }
