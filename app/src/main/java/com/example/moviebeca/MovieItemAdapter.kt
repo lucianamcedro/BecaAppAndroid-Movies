@@ -25,7 +25,6 @@ class MovieItemAdapter(
        holder.bind(getItem(position))
     }
 
-
     class MovieItemViewHolder(
         private val binding: MovieListItemBinding,
         private val onClickListener: ((movieId: Int) -> Unit)?
@@ -33,11 +32,11 @@ class MovieItemAdapter(
 
             fun bind(movie: Movie){
                 binding.movieName.text = movie.title
-                binding.movieData.text = movie.release_date
+                binding.movieData.text = movie.releaseDate
 
                 Glide
                     .with(binding.root.context)
-                    .load("https://image.tmdb.org/t/p/w500/")
+                    .load("https://image.tmdb.org/t/p/original" + movie.poster_path)
                     .centerCrop()
                     .into(binding.moviePoster)
 
