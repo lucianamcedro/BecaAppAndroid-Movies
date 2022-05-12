@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.util.Log
 import androidx.activity.viewModels
 import com.example.moviebeca.client.IClientMovie
+import com.example.moviebeca.client.IClientMovie.Companion.baseUrl
 import com.example.moviebeca.databinding.ActivityMainBinding
 import com.example.moviebeca.model.Movie
 import com.example.moviebeca.model.MovieApiResult
@@ -16,10 +17,9 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 class MainActivity : AppCompatActivity() {
-
     private val retrofit by lazy {
         Retrofit.Builder()
-            .baseUrl("https://api.themoviedb.org/3")
+            .baseUrl(baseUrl)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
     }
@@ -30,8 +30,8 @@ class MainActivity : AppCompatActivity() {
 
 
     private val movieListAdapter by lazy {
-        MovieItemAdapter(onClickListener = { movieId ->
-            goToMovieDetails(movieId)
+        MovieItemAdapter(onClickListener = { movie ->
+            goToMovieDetails(movie)
         })
     }
     private val movieRepository = MovieRepository(movieClient)
@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.movieListRecyclerview.adapter = movieListAdapter
-
+        movieViewModel.getMoviesFromRetrofit()
       //  setListAdapter(mockMovie())
 
         getMoviesAndObserve()
@@ -91,4 +91,5 @@ class MainActivity : AppCompatActivity() {
         intent.putExtra("movieId", movieId)
         startActivity(intent)
     }
+
 }
