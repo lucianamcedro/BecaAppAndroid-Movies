@@ -15,8 +15,10 @@ As bibliotecas abaixo podem ajuda-lo a lidar com alguns desafios deste projeto.
 - Biblioteca para requisições http https://github.com/square/retrofit
 
 
+[Relatório NTT Clean Architecture](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2Flucianamcedro%2Flucianamcedro-BecaAppAndroid-AppMovies%2Fmaster%2FNttCleanArchitecture.docx&wdOrigin=BROWSELINK)
+
+
 
 https://user-images.githubusercontent.com/86168060/168107966-dba7d322-b00d-476c-b0b5-fdbc81b9bf0f.mp4
 
 
-[Relatório NTT Clean Architecture](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2Flucianamcedro%2Flucianamcedro-BecaAppAndroid-AppMovies%2Fmaster%2FNttCleanArchitecture.docx&wdOrigin=BROWSELINK)
