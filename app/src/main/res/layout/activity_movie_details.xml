@@ -11,7 +11,7 @@
         android:layout_height="437dp"
         android:scaleType="centerCrop"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="ContentDescription"
+        tools:ignore="ContentDescription,MissingConstraints"
         tools:layout_editor_absoluteX="-2dp"
         tools:srcCompat="@tools:sample/avatars" />
 
@@ -27,14 +27,18 @@
         android:textSize="24sp"
         android:textColor="@android:color/black" />
 
-    <TextView
+    <RatingBar
         android:id="@+id/movie_voto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:text="Bernese Mountain Dog"
-        app:layout_constraintTop_toBottomOf="@id/movie_name"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="24dp"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:stepSize="0.6"
         app:layout_constraintStart_toStartOf="@id/movie_name"
-        android:textSize="16sp" />
+        app:layout_constraintTop_toBottomOf="@id/movie_name"
+        tools:text="Bernese Mountain Dog" />
 
     <TextView
         android:id="@+id/movie_data"
