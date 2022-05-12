@@ -18,4 +18,6 @@ As bibliotecas abaixo podem ajuda-lo a lidar com alguns desafios deste projeto.
 
 
 
-"# samuelbaldasso-BECA-ANDROID-NTT-DATA---APP-FILMES" 
+
+https://user-images.githubusercontent.com/86168060/168096637-19483941-b1bc-4d90-a39f-44da62116a08.mp4
+
