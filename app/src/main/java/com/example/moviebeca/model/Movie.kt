@@ -1,5 +1,7 @@
 package com.example.moviebeca.model
 
+import java.io.Serializable
+
 data class Movie(
     val adult: Boolean,
     val backdrop_path: String,
@@ -16,5 +18,4 @@ data class Movie(
     val vote_average: Double,
     val vote_count: Int,
     val media_type: String,
-)
-
+) : Serializable
