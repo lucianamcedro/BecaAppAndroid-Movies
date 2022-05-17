@@ -18,6 +18,20 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 class MainActivity : AppCompatActivity() {
+<<<<<<< HEAD
+=======
+    private val retrofit by lazy {
+        Retrofit.Builder()
+            .baseUrl(baseUrl)
+            .addConverterFactory(GsonConverterFactory.create())
+            .build()
+    }
+
+    private val movieClient:IClientMovie by lazy {
+        retrofit.create(IClientMovie::class.java)
+    }
+
+>>>>>>> b1a2234d0603e174d07112e5904d11bf9becf51d
 
     private val movieListAdapter by lazy {
         MovieItemAdapter(onClickListener = { movie ->
@@ -38,7 +52,11 @@ class MainActivity : AppCompatActivity() {
 
         binding.movieListRecyclerview.adapter = movieListAdapter
         movieViewModel.getMoviesFromRetrofit()
+<<<<<<< HEAD
         //  setListAdapter(mockMovie())
+=======
+      //  setListAdapter(mockMovie())
+>>>>>>> b1a2234d0603e174d07112e5904d11bf9becf51d
 
         getMoviesAndObserve()
     }
@@ -76,9 +94,14 @@ class MainActivity : AppCompatActivity() {
         intent.putExtra("movie", movie)
         startActivity(intent)
     }
+<<<<<<< HEAD
     private fun setupAdapter(list: List<Movie>) {
         movieListAdapter.submitList(list)
     }
 }
 
 
+=======
+
+}
+>>>>>>> b1a2234d0603e174d07112e5904d11bf9becf51d

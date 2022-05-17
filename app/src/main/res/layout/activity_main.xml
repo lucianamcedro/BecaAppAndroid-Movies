@@ -21,16 +21,43 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
+    <TextView
+        android:id="@+id/logo"
+        android:fontPath="fonts/GoogleSans-Bold.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="18dp"
+        android:text="BecaMovies"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/movie_list_recyclerview"
+<<<<<<< HEAD
         android:layout_width="421dp"
         android:layout_height="637dp"
+=======
+        android:layout_width="409dp"
+        android:layout_height="658dp"
+>>>>>>> b1a2234d0603e174d07112e5904d11bf9becf51d
         android:layout_marginHorizontal="8dp"
         android:layout_marginTop="40dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+<<<<<<< HEAD
         app:layout_constraintTop_toBottomOf="@id/logo"
         tools:layout_editor_absoluteX="0dp"
         tools:listitem="@layout/movie_list_item" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+=======
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="73dp"
+        tools:listitem="@layout/movie_list_item" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+>>>>>>> b1a2234d0603e174d07112e5904d11bf9becf51d

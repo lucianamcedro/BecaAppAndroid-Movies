@@ -29,6 +29,7 @@ class MovieItemAdapter(
         private val onClickListener: (movie: Movie) -> Unit
     ) : RecyclerView.ViewHolder(binding.root) {
 
+<<<<<<< HEAD
         fun bind(movie: Movie) {
             // binding.movieName.contentDescription = movie.title
             // binding.movieData.contentDescription = release_date
@@ -40,6 +41,17 @@ class MovieItemAdapter(
                 .load("https://image.tmdb.org/t/p/original" + movie.poster_path)
                 .centerCrop()
                 .into(binding.moviePoster)
+=======
+            fun bind(movie: Movie){
+                binding.movieName.text = movie.title
+                binding.movieData.text = movie.releaseDate
+
+                Glide
+                    .with(binding.root.context)
+                    .load("https://image.tmdb.org/t/p/original" + movie.poster_path)
+                    .centerCrop()
+                    .into(binding.moviePoster)
+>>>>>>> b1a2234d0603e174d07112e5904d11bf9becf51d
 
             binding.root.setOnClickListener {
                 onClickListener.invoke(movie)
@@ -58,4 +70,8 @@ class MovieItemAdapter(
             }
         }
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> b1a2234d0603e174d07112e5904d11bf9becf51d
 }

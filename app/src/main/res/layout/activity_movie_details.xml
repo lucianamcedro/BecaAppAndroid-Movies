@@ -12,6 +12,10 @@
         android:scaleType="centerCrop"
         android:contentDescription="@string/movie_poster"
         app:layout_constraintTop_toTopOf="parent"
+<<<<<<< HEAD
+=======
+        tools:ignore="ContentDescription,MissingConstraints"
+>>>>>>> b1a2234d0603e174d07112e5904d11bf9becf51d
         tools:layout_editor_absoluteX="-2dp"
         tools:srcCompat="@tools:sample/avatars" />
 
@@ -29,6 +33,7 @@
         android:textStyle="bold"
         android:textColor="@android:color/black" />
 
+<<<<<<< HEAD
 
     <RatingBar
         android:id="@+id/movie_voto"
@@ -43,6 +48,32 @@
         android:stepSize="0.6"
         app:layout_constraintTop_toBottomOf="@id/movie_name"
         tools:layout_editor_absoluteX="33dp" />
+=======
+    <RatingBar
+        android:id="@+id/movie_voto"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="24dp"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:stepSize="0.6"
+        app:layout_constraintStart_toStartOf="@id/movie_name"
+        app:layout_constraintTop_toBottomOf="@id/movie_name"
+        tools:text="Bernese Mountain Dog" />
+
+    <TextView
+        android:id="@+id/movie_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/movie_voto"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/black" />
+
+>>>>>>> b1a2234d0603e174d07112e5904d11bf9becf51d
 
     <TextView
         android:id="@+id/movie_descrition"
