@@ -1,6 +1,12 @@
+<<<<<<< HEAD:app/src/main/java/com/example/moviebeca/data/client/ClientMovie.kt
 package com.example.moviebeca.data.client
 
 import com.example.moviebeca.data.client.IClientMovie.Companion.baseUrl
+=======
+package com.example.moviebeca.client
+
+import com.example.moviebeca.client.IClientMovie.Companion.baseUrl
+>>>>>>> a3c7f1d620210c58fe3905c2ac6203452b6fde62:app/src/main/java/com/example/moviebeca/client/ClientMovie.kt
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 

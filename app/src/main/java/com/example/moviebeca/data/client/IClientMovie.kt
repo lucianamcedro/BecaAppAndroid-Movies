@@ -1,7 +1,12 @@
 package com.example.moviebeca.data.client
 
+<<<<<<< HEAD:app/src/main/java/com/example/moviebeca/data/client/IClientMovie.kt
 import com.example.moviebeca.domain.model.MovieDetails
 import com.example.moviebeca.domain.model.MovieResponse
+=======
+import com.example.moviebeca.model.MovieDetails
+import com.example.moviebeca.model.MovieResponse
+>>>>>>> a3c7f1d620210c58fe3905c2ac6203452b6fde62:app/src/main/java/com/example/moviebeca/client/IClientMovie.kt
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Path

@@ -18,6 +18,7 @@
             android:layout_height="130dp"
             android:layout_marginStart="10dp"
             android:scaleType="centerCrop"
+            android:contentDescription="@string/movie_poster"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -28,6 +29,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:text="Bernese Mountain Dog"
+            android:contentDescription="@string/movie_name"
             app:layout_constraintStart_toEndOf="@+id/movie_poster"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
@@ -43,7 +45,11 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="80dp"
             android:textSize="16sp"
+<<<<<<< HEAD
+            android:contentDescription="@string/movie_data"
+=======
             tools:text="Coursing"
+>>>>>>> b1a2234d0603e174d07112e5904d11bf9becf51d
             app:layout_constraintTop_toBottomOf="@+id/movie_name"
             app:layout_constraintStart_toStartOf="@+id/movie_name" />
 

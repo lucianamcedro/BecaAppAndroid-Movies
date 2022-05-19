@@ -7,7 +7,11 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.moviebeca.databinding.MovieListItemBinding
+<<<<<<< HEAD:app/src/main/java/com/example/moviebeca/presenter/adapters/MovieItemAdapter.kt
 import com.example.moviebeca.domain.model.Movie
+=======
+import com.example.moviebeca.model.Movie
+>>>>>>> a3c7f1d620210c58fe3905c2ac6203452b6fde62:app/src/main/java/com/example/moviebeca/MovieItemAdapter.kt
 
 class MovieItemAdapter(
     var onClickListener: (movie: Movie) -> Unit
@@ -29,6 +33,7 @@ class MovieItemAdapter(
         private val onClickListener: (movie: Movie) -> Unit
     ) : RecyclerView.ViewHolder(binding.root) {
 
+<<<<<<< HEAD:app/src/main/java/com/example/moviebeca/presenter/adapters/MovieItemAdapter.kt
         fun bind(movie: Movie) {
             binding.movieName.text = movie.title
             binding.movieData.text = movie.release_date
@@ -38,6 +43,31 @@ class MovieItemAdapter(
                 .load("https://image.tmdb.org/t/p/original" + movie.poster_path)
                 .centerCrop()
                 .into(binding.moviePoster)
+=======
+<<<<<<< HEAD
+        fun bind(movie: Movie) {
+            // binding.movieName.contentDescription = movie.title
+            // binding.movieData.contentDescription = release_date
+            binding.movieName.text = movie.title
+            binding.movieData.text = movie.release_date
+
+            Glide
+                .with(binding.root.context)
+                .load("https://image.tmdb.org/t/p/original" + movie.poster_path)
+                .centerCrop()
+                .into(binding.moviePoster)
+=======
+            fun bind(movie: Movie){
+                binding.movieName.text = movie.title
+                binding.movieData.text = movie.releaseDate
+
+                Glide
+                    .with(binding.root.context)
+                    .load("https://image.tmdb.org/t/p/original" + movie.poster_path)
+                    .centerCrop()
+                    .into(binding.moviePoster)
+>>>>>>> b1a2234d0603e174d07112e5904d11bf9becf51d
+>>>>>>> a3c7f1d620210c58fe3905c2ac6203452b6fde62:app/src/main/java/com/example/moviebeca/MovieItemAdapter.kt
 
             binding.root.setOnClickListener {
                 onClickListener.invoke(movie)
@@ -56,4 +86,11 @@ class MovieItemAdapter(
             }
         }
     }
+<<<<<<< HEAD:app/src/main/java/com/example/moviebeca/presenter/adapters/MovieItemAdapter.kt
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> b1a2234d0603e174d07112e5904d11bf9becf51d
+>>>>>>> a3c7f1d620210c58fe3905c2ac6203452b6fde62:app/src/main/java/com/example/moviebeca/MovieItemAdapter.kt
 }

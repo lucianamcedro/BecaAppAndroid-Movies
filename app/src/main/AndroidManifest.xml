@@ -19,9 +19,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
         <activity
             android:name=".presenter.view.MovieDetailsActivity"
             android:exported="true"/>
+=======
+        <activity android:name=".MovieDetailsActivity" />
+>>>>>>> a3c7f1d620210c58fe3905c2ac6203452b6fde62
     </application>
 
 </manifest>
