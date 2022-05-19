@@ -1,4 +1,4 @@
-package com.example.moviebeca
+package com.example.moviebeca.presenter.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.moviebeca.databinding.MovieListItemBinding
-import com.example.moviebeca.model.Movie
+import com.example.moviebeca.domain.model.Movie
 
 class MovieItemAdapter(
     var onClickListener: (movie: Movie) -> Unit

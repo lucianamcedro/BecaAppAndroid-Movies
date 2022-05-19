@@ -1,8 +1,8 @@
-package com.example.moviebeca.repositorys
+package com.example.moviebeca.data.repositorys
 
-import com.example.moviebeca.client.IClientMovie
-import com.example.moviebeca.model.MovieDetails
-import com.example.moviebeca.model.MovieResponse
+import com.example.moviebeca.data.client.IClientMovie
+import com.example.moviebeca.domain.model.MovieDetails
+import com.example.moviebeca.domain.model.MovieResponse
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import retrofit2.Call

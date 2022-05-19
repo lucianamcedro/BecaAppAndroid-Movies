@@ -1,4 +1,4 @@
-package com.example.moviebeca.model
+package com.example.moviebeca.domain.model
 
 import android.os.Parcelable
 import com.google.gson.annotations.SerializedName

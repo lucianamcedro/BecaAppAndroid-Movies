@@ -1,10 +1,10 @@
-package com.example.moviebeca.viewmodel
+package com.example.moviebeca.presenter.viewmodel
 
 import androidx.lifecycle.*
-import com.example.moviebeca.model.Movie
-import com.example.moviebeca.model.MovieApiResult
-import com.example.moviebeca.repositorys.IMovieRepository
-import com.example.moviebeca.repositorys.MovieRepository
+import com.example.moviebeca.domain.model.Movie
+import com.example.moviebeca.data.model.MovieApiResult
+import com.example.moviebeca.data.repositorys.IMovieRepository
+import com.example.moviebeca.data.repositorys.MovieRepository
 import kotlinx.coroutines.launch
 import retrofit2.await
 import java.lang.Exception

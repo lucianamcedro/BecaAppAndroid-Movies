@@ -1,4 +1,4 @@
-package com.example.moviebeca.model
+package com.example.moviebeca.data.model
 
 sealed class MovieApiResult<T> {
     class Loading<T> : MovieApiResult<T>()
