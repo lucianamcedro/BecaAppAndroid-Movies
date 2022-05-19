@@ -1,7 +1,7 @@
-package com.example.moviebeca.data.client
+package com.example.moviebeca.client
 
-import com.example.moviebeca.domain.model.MovieDetails
-import com.example.moviebeca.domain.model.MovieResponse
+import com.example.moviebeca.model.MovieDetails
+import com.example.moviebeca.model.MovieResponse
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Path

@@ -1,4 +1,4 @@
-package com.example.moviebeca.domain.model
+package com.example.moviebeca.model
 
 import java.io.Serializable
 

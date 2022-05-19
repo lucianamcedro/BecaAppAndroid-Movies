@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MovieBeca</string>
+    <string name="app_name">Beca Movies</string>
     <string name="movie_data">%s | %s</string>
     <string name="movie_name">Nome do Filme</string>
     <string name="movie_poster">Poster do filme</string>
