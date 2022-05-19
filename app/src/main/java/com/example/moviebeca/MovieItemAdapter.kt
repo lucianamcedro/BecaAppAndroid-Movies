@@ -1,12 +1,13 @@
-package com.example.moviebeca.presenter.adapters
+package com.example.moviebeca
 
-import android.graphics.Movie
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.example.moviebeca.databinding.MovieListItemBinding
+import com.example.moviebeca.model.Movie
 
 class MovieItemAdapter(
     var onClickListener: (movie: Movie) -> Unit
@@ -29,6 +30,8 @@ class MovieItemAdapter(
     ) : RecyclerView.ViewHolder(binding.root) {
 
         fun bind(movie: Movie) {
+            // binding.movieName.contentDescription = movie.title
+            // binding.movieData.contentDescription = release_date
             binding.movieName.text = movie.title
             binding.movieData.text = movie.release_date
 

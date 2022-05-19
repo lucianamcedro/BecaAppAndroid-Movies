@@ -1,14 +1,13 @@
 package com.example.moviebeca.presenter.view
 
+import android.graphics.Movie
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
-import com.example.moviebeca.data.client.ClientMovie.Companion.movieClientService
 import com.example.moviebeca.databinding.ActivityMovieDetailsBinding
-import com.example.moviebeca.domain.model.Movie
-import com.example.moviebeca.domain.model.MovieDetails
 import com.example.moviebeca.data.repositorys.MovieRepository
+import com.example.moviebeca.domain.model.MovieDetails
 import com.example.moviebeca.presenter.viewmodel.MovieDetailsViewModel
 import com.example.moviebeca.presenter.viewmodel.MovieDetailsViewModelFactory
 

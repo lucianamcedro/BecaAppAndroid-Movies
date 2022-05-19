@@ -1,7 +1,7 @@
 package com.example.moviebeca.presenter.viewmodel
 
 import androidx.lifecycle.*
-import com.example.moviebeca.domain.model.Movie
+import com.example.moviebeca.domain.domain.Movie
 import com.example.moviebeca.data.model.MovieApiResult
 import com.example.moviebeca.data.repositorys.IMovieRepository
 import com.example.moviebeca.data.repositorys.MovieRepository

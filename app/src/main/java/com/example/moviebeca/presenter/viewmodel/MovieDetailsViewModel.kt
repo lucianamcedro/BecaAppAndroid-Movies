@@ -1,7 +1,7 @@
 package com.example.moviebeca.presenter.viewmodel
 
 import androidx.lifecycle.*
-import com.example.moviebeca.domain.model.MovieDetails
+import com.example.moviebeca.domain.domain.MovieDetails
 import com.example.moviebeca.data.repositorys.IMovieRepository
 import com.example.moviebeca.data.repositorys.MovieRepository
 import kotlinx.coroutines.launch

@@ -45,11 +45,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="80dp"
             android:textSize="16sp"
-<<<<<<< HEAD
             android:contentDescription="@string/movie_data"
-=======
-            tools:text="Coursing"
->>>>>>> b1a2234d0603e174d07112e5904d11bf9becf51d
             app:layout_constraintTop_toBottomOf="@+id/movie_name"
             app:layout_constraintStart_toStartOf="@+id/movie_name" />
 

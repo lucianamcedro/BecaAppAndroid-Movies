@@ -1,13 +1,12 @@
 package com.example.moviebeca.presenter.view
 
 import android.content.Intent
+import android.graphics.Movie
 import android.os.Bundle
 import android.util.Log
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import com.example.moviebeca.data.client.ClientMovie.Companion.movieClientService
-import com.example.moviebeca.databinding.ActivityMainBinding
-import com.example.moviebeca.domain.model.Movie
 import com.example.moviebeca.data.model.MovieApiResult
 import com.example.moviebeca.presenter.adapters.MovieItemAdapter
 import com.example.moviebeca.data.repositorys.MovieRepository
@@ -77,5 +76,3 @@ class MainActivity : AppCompatActivity() {
         movieListAdapter.submitList(list)
     }
 }
-
-

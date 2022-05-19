@@ -1,5 +1,7 @@
 package com.example.moviebeca.domain.model
 
+import android.graphics.Movie
+
 data class MovieResponse(
     val page: Int,
     val results: List<Movie>,

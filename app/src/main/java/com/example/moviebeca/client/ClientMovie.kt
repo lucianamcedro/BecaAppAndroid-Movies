@@ -1,6 +1,6 @@
-package com.example.moviebeca.data.client
+package com.example.moviebeca.client
 
-import com.example.moviebeca.data.client.IClientMovie.Companion.baseUrl
+import com.example.moviebeca.client.IClientMovie.Companion.baseUrl
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 

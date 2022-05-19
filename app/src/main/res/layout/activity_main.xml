@@ -4,9 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-<<<<<<< HEAD
-    tools:context=".presenter.view.MainActivity">
-=======
     tools:context=".MainActivity">
 
     <TextView
@@ -24,59 +21,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
->>>>>>> a3c7f1d620210c58fe3905c2ac6203452b6fde62
-
-    <TextView
-        android:id="@+id/logo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="18dp"
-        android:layout_marginTop="16dp"
-        android:text="BecaMovies"
-        android:textColor="@color/black"
-        android:textSize="38sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/movie_list_recyclerview"
-<<<<<<< HEAD
         android:layout_width="421dp"
         android:layout_height="637dp"
         android:layout_marginHorizontal="8dp"
         android:layout_marginTop="40dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintTop_toBottomOf="@id/logo"
-=======
-<<<<<<< HEAD
-        android:layout_width="421dp"
-        android:layout_height="637dp"
-=======
-        android:layout_width="409dp"
-        android:layout_height="658dp"
->>>>>>> b1a2234d0603e174d07112e5904d11bf9becf51d
-        android:layout_marginHorizontal="8dp"
-        android:layout_marginTop="40dp"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-<<<<<<< HEAD
-        app:layout_constraintTop_toBottomOf="@id/logo"
         tools:layout_editor_absoluteX="0dp"
         tools:listitem="@layout/movie_list_item" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-=======
-        tools:ignore="MissingConstraints"
->>>>>>> a3c7f1d620210c58fe3905c2ac6203452b6fde62
-        tools:layout_editor_absoluteX="0dp"
-        tools:listitem="@layout/movie_list_item" />
-
-<<<<<<< HEAD
-
-</androidx.constraintlayout.widget.ConstraintLayout>
-=======
-</androidx.constraintlayout.widget.ConstraintLayout>
->>>>>>> b1a2234d0603e174d07112e5904d11bf9becf51d
->>>>>>> a3c7f1d620210c58fe3905c2ac6203452b6fde62
