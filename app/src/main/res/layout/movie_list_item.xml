@@ -1,16 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_item_list_coin"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     app:cardCornerRadius="8dp"
-    android:layout_marginBottom="8dp">
+    android:layout_marginBottom="10dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/item_coin"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content"
+        android:background="@android:color/black">
 
         <ImageView
             android:id="@+id/movie_poster"
@@ -37,7 +39,7 @@
             android:textStyle="bold"
             app:layout_constraintTop_toTopOf="parent"
             tools:layout_editor_absoluteX="119dp"
-            android:textColor="@android:color/black" />
+            android:textColor="@color/white" />
 
         <TextView
             android:id="@+id/movie_data"
@@ -45,11 +47,11 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="80dp"
             android:textSize="16sp"
+            android:layout_marginHorizontal="8dp"
             android:contentDescription="@string/movie_data"
+            android:textColor="@color/white"
             app:layout_constraintTop_toBottomOf="@+id/movie_name"
             app:layout_constraintStart_toStartOf="@+id/movie_name" />
 
-
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 </androidx.cardview.widget.CardView>
