@@ -1,11 +1,13 @@
 package com.example.moviebeca.domain.model
 
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 import java.io.Serializable
-
+@Entity(tableName = "Movie")
 data class Movie(
+    @PrimaryKey()
     val adult: Boolean,
     val backdrop_path: String,
-    val genre_ids: List<Int>,
     val id: Int,
     val original_language: String,
     val original_title: String,
