@@ -5,4 +5,5 @@
     <string name="movie_poster">Poster do filme</string>
     <string name="movie_descrition">Descrição do Filme</string>
     <string name="movie_rating">Avaliação do Filme</string>
+    <string name="title_favoritos">Filmes Favoritos</string>
 </resources>
