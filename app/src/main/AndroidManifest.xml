@@ -11,14 +11,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MovieBeca">
         <activity
-            android:name=".presenter.view.MainActivity"
-            android:exported="true">
+            android:name=".presenter.view.SplashActivity"
+            android:exported="true"
+            android:screenOrientation="fullSensor">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+    <activity
+        android:name=".presenter.view.MainActivity"
+        android:exported="true">
+    </activity>
         <activity android:name=".presenter.view.MovieDetailsActivity" />
 
         <activity android:name=".presenter.view.FavoriteMoviesActivity"/>
