@@ -27,6 +27,8 @@ APP de Filmes construindo para BECA da NTT Data, em Kotlin. Foram utilizados:
 
 
 
-https://user-images.githubusercontent.com/86168060/168107966-dba7d322-b00d-476c-b0b5-fdbc81b9bf0f.mp4
+![Movies-1](https://user-images.githubusercontent.com/86168060/174921740-93b7edce-9432-4355-92f3-38001d8cc93f.png)
+![Movies-2](https://user-images.githubusercontent.com/86168060/174921741-5d039bc2-85ed-4ffb-a946-e6daf3efbd6a.png)
+![Movies-3](https://user-images.githubusercontent.com/86168060/174921739-42608501-cae8-4e9f-96b8-cc58dccfaf7a.png)
 
 
